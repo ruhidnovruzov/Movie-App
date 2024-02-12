@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-    color: white;
-}
-
 img {
     height: 350px;
 }
@@ -18,6 +13,7 @@ img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 27px;
+    padding-top: 100px;
 }
 
 .card {

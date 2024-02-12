@@ -1,4 +1,4 @@
-import "./style.css"
+import "./card.css"
 export default function Card({title, year, big_image}){
 
     return(

@@ -1,0 +1,41 @@
+.search {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 30%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: rgba(22, 144, 234, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+
+}
+
+.button {
+    position: absolute;
+    right: 10px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
