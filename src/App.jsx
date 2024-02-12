@@ -3,7 +3,6 @@ import axios from 'axios';
 import GridLoader from "react-spinners/GridLoader";
 import Card from './components/Card/card';
 import './App.css'
-import { ThemeProvider } from './context';
 import ThemedButton from './components/Card/Button/button';
 import { ThemeContext } from './context';
 import { useContext } from 'react';
@@ -20,6 +19,8 @@ export default function App() {
   const [filteredMovies, setFilteredMovies] = useState([])
   const [searchTerm, setSearchTerm] = useState('');
   const { theme} = useContext(ThemeContext);
+
+  console.log(theme)
 
 
 
@@ -65,9 +66,9 @@ export default function App() {
 
   return (
     <div className="container">
-      <div className="top">
+      <div className="top" style={{background: theme === 'light' ? 'white' : 'black'}}>
         <div className="heading">
-          <h1 style={{}}>Top 100 Movies on IMDB</h1>
+          <h1 style={{color: theme === 'light' ? 'black' : 'white'}}>Top 100 Movies on IMDB</h1>
           <div className="button">
           <ThemedButton /> 
         </div> 

@@ -21,11 +21,6 @@ h1 {
     position: fixed;
     width: 100%;
     padding: 10px;
-    background: rgba(22, 144, 234, 0.11);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.4px);
-    -webkit-backdrop-filter: blur(3.4px);
-
 }
 
 .button {
